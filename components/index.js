@@ -1,6 +1,3 @@
-import "./assets/styles/index.scss";
-import "./utils/index";
-
 import fontAnimation from "./fontAnimation.vue";
 const components = [fontAnimation];
 const install = function (Vue) {

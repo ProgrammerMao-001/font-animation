@@ -1,11 +1,21 @@
 {
   "name": "font-animation",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": false,
   "author": {
     "name": "毛三仙",
     "email": "mhf.work@qq.com"
   },
+  "license": "MIT",
+  "homepage": "https://github.com/ProgrammerMao-001/font-animation",
+  "keywords": [
+    "vue",
+    "font",
+    "amimation",
+    "动画",
+    "vue2动画组件",
+    "文字动画效果"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -21,7 +31,6 @@
     "type": "git",
     "url": "https://github.com/ProgrammerMao-001/font-animation"
   },
-  "homepage": "",
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",

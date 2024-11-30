@@ -1,29 +1,64 @@
-# bdg-map-lib
-
-vue2版本的组件库模板
+# font-animation
 
 ## 安装
 
-使用 npm 安装 comp-demo
-
 ```bash
-  npm install comp-demo
+npm i font-animation --save-dev
 ```
 
 ## 使用
-下载源码直接二开即可，本组件库只是示例，不做任何功能
-```bash 
-git clone https://gitee.com/ProgrammerMao-001/compDemo.git
+
+```html
+
+<template>
+    <div id="app">
+        <fontAnimation
+                style="position:absolute;left: 0;right: 0;margin: auto"
+                can-click
+                :fontStyle="{
+            color: '#ffa500',
+            fontWeight: 'bolder'
+        }"
+                text="这组件真棒！"
+                @handle-click="textClick">
+            <template slot="prepend">
+                <span style="margin-right: 8px">【插槽】</span>
+            </template>
+            <template slot="append">
+                <span>【插槽】</span>
+            </template>
+        </fontAnimation>
+    </div>
+</template>
+
+<script>
+    export default {
+        methods: {
+            textClick(e) {
+                console.log(e, "e")
+            }
+        },
+    };
+</script>
 ```
 
-## 发布
-todo: 更新 readeMe.md、package.json版本号
-1. npm run lib
-2. npm get registry
-3. npm login
-4. npm publish --access public
+## 属性
 
-```bash
-npm set registry https://registry.npmmirror.com
-npm set registry https://registry.npmjs.org
-```
+| 属性名       | 默认值                                       | 类型      | 描述                       | 是否必填 |
+   |-----------|-------------------------------------------|---------|--------------------------|------|   
+| text      | ""                                        | Boolean | 显示的文字                    | true |
+| canClick  | true;                                     | Boolean | 字体是否可点击 可选值：true / false |      |
+| fontStyle | `{color: "#ffa500",fontWeight: "bolder"}` | Object  | 字体样式                     |      |
+
+## 插槽
+
+| 插槽      | 描述   |
+   |---------|------|
+| prepend | 前置插槽 | 
+| append  | 后置插槽 | 
+
+## 事件
+
+| 事件名          | 描述   | 返回值     |
+|--------------|------|---------| 
+| handle-click | 点击事件 | 点击文本的内容 |
