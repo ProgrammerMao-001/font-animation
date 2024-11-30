@@ -1,6 +1,6 @@
 {
-  "name": "@mhfwork/comp-demo",
-  "version": "0.0.3",
+  "name": "font-animation",
+  "version": "0.0.1",
   "private": false,
   "author": {
     "name": "毛三仙",
@@ -10,7 +10,6 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "format": "prettier --write \"components/**/*.js\" \"components/**/*.vue\" \"examples/**/*.vue\" \"examples/**/*.vue\"",
     "lib": "vue-cli-service build --target lib components/index.js"
   },
   "dependencies": {
@@ -20,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/ProgrammerMao-001/compDemo.git"
+    "url": "https://github.com/ProgrammerMao-001/font-animation"
   },
   "homepage": "",
   "devDependencies": {
@@ -32,9 +31,6 @@
     "element-ui": "^2.15.14",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "node-sass": "^4.14.1",
-    "sass": "^1.32.7",
-    "sass-loader": "^8.0.0",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
