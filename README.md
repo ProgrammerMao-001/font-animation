@@ -1,5 +1,5 @@
 # font-animation
-
+![demo](/public/font-animation.gif)
 ## 安装
 
 ```bash
